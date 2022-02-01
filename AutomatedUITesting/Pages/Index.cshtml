@@ -1,0 +1,24 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Login Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Login</h1>
+    <div class="text-center login-form">
+        <div class="text-center login-username-section">
+            <input class="username" type="text" value="" placeholder="Username" />
+        </div>
+        <div class="text-center login-password-section">
+            <input class="password" type="password" value="" placeholder="Password" />
+            </div>
+        <div class="text-center remember-me-section">
+        <input type="checkbox" id="rememberMe"> 
+        <label for="rememberMe">Remember me</label>
+        <a href="/forgotpassword" class="forget-password">Forgot Password?</a>
+        </div>
+        <button type="submit" class="login-button">Login</button>
+        <div>Don't have account yet? <a href="/signup">Sign Up</a></div>
+        </div>
+    </div>
